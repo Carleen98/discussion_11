@@ -92,6 +92,7 @@
                 gameDayMessage.innerText = "2023 Champions!";
                 document.getElementById("content").appendChild(gameDayMessage);
             });
+            const playerItems = document.querySelectorAll("#playerList li");
             // Step 5: Use a conditional statement for playerItems. If there are more than 5 players, log a special message to the console
             // "Go Blue, so many great players in one season!"
             if (playerItems.length > 5) {
@@ -101,8 +102,8 @@
             if (playerItems.length > 4) {
                 console.log("Go Blue, so many great players in one season!");
             }
-            // Step 6: Update the three span elements using ONLY JavaScript
             function displayInformation() {
+            // Step 6: Update the three span elements using ONLY JavaScript
                 document.getElementById("URL").innerText = window.location.href;
                 document.getElementById("items").innerText = playerItems.length;
                 document.getElementById("time").innerText = new Date().toLocaleString();
